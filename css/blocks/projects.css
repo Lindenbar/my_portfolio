@@ -1,0 +1,27 @@
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 10px;
+
+    padding: 40px 100px;
+
+}
+
+.projects__project-item {
+    height: 200px;
+    border: 1px solid var(--color-2);
+}
+
+.projects__project-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.projects__project-item a:hover {
+    background-color: var(--color-3);
+}
+
