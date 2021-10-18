@@ -1,0 +1,9 @@
+:root {
+    --invisible: rgba(0, 0, 0, 0);
+    --color-1: #c2c2c2;
+    --color-2: black;
+    --color-3: white;
+    --color-4: #f1f1f1;
+    --color-5: #7a7a7a;
+    --color-6: rgba(0, 0, 0, 0.2);
+}
