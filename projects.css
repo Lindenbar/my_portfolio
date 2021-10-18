@@ -11,6 +11,7 @@
 .projects__project-item {
     height: 200px;
     border: 1px solid var(--color-2);
+    overflow: hidden;
 }
 
 .projects__project-item a {
@@ -23,7 +24,34 @@
     transition: 0.2s;
 }
 
-.projects__project-item a:hover {
+.projects__project-item:hover {
     background-color: var(--color-3);
+}
+
+.projects__project-title {
+    position: relative;
+    top: -30px;
+
+    height: 30px;
+    padding: 0 5px 0 5px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+
+    transition: 0.5s;
+    background-color: var(--color-6);
+    pointer-events: none;
+}
+
+.projects__project-item a:hover + .projects__project-title {
+    height: inherit;
+    top: -100%;
+    padding: 10px 5px;
+
+    white-space: unset;
+    line-height: unset;
+
 }
 
